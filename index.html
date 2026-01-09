@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Clock in app — Static Export</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <button id="menuButton" class="menu-button" aria-label="Open menu">☰</button>
+        <h1 class="site-title">Clock in app</h1>
+      </div>
+      <div class="header-meta">Static export • No server required</div>
+    </div>
+  </header>
+
+  <div class="container main-grid">
+    <aside id="sidebar" class="sidebar">
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Dashboard</a>
+        <a href="admin/index.html" class="nav-link">Admin</a>
+        <a href="admin/employee-management.html" class="nav-link">Employees</a>
+        <a href="admin/audit-logs.html" class="nav-link">Audit logs</a>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <section class="card">
+        <div class="card-header">
+          <h2 class="card-title">Clock Portal</h2>
+          <div class="muted">Local demo (no server)</div>
+        </div>
+
+        <div class="card-body cols-2">
+          <div class="panel">
+            <p class="muted">Current status</p>
+            <div id="status" class="status">Not clocked in</div>
+            <div class="controls">
+              <button id="clockIn" class="btn btn-success">Clock In</button>
+              <button id="clockOut" class="btn btn-danger" disabled>Clock Out</button>
+            </div>
+          </div>
+
+          <div class="panel">
+            <p class="muted">Recent activity</p>
+            <ul id="activity" class="activity-list">
+              <li class="muted">No activity yet</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3 class="card-title">Notes</h3>
+        <p class="muted">This is a static replica of the app layout. All data is stored in browser localStorage for demo purposes.</p>
+      </section>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">© 2026 Clock in app — Static Export</div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
