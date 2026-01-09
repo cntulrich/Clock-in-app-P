@@ -26,8 +26,8 @@
 
   // Escape helper to avoid HTML injection
   function escapeHtml(s) {
-    return String(s).replace(/[&<>"'\/]/g, function (c) {
-      return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":"&#39;",'/':'&#47;'}[c]);
+    return String(s).replace(/[&<>\"'\/]/g, function (c) {
+      return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":"&#39;","/":"&#47;"}[c]);
     });
   }
 
